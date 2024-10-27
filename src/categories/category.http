@@ -1,0 +1,27 @@
+POST http://localhost:3000/categories/seed
+###
+GET http://localhost:3000/categories
+###
+POST http://localhost:3000/categories
+Content-Type: application/json
+
+{
+    "name":"Dining",
+    "image_link": "https://i.postimg.cc/XNcsnjHC/jantar.png"
+}
+###
+POST http://localhost:3000/categories
+Content-Type: application/json
+
+{
+    "name":"Living",
+    "image_link": "https://i.postimg.cc/Xq3x9mJq/sala.png"
+}
+###
+POST http://localhost:3000/categories
+Content-Type: application/json
+
+{
+    "name":"Bedroom",
+    "image_link": "https://i.postimg.cc/MTJY8N15/quarto.png"
+}
