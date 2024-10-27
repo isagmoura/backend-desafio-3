@@ -8,10 +8,7 @@ import { ConfigModule } from '@nestjs/config';
 
 @Module({
   imports: [
-    ConfigModule.forRoot({
-      envFilePath:
-        process.env.NODE_ENV === 'development' ? '.env.development' : '.env',
-    }),
+    ConfigModule.forRoot(),
     TypeOrmModule.forRoot({
       type: 'postgres',
       host: 'localhost',
@@ -29,5 +26,3 @@ import { ConfigModule } from '@nestjs/config';
   providers: [AppService],
 })
 export class AppModule {}
-
-console.log(process.env.bunda);
